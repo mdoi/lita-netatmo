@@ -24,7 +24,6 @@ module Lita
 
       # https://dev.netatmo.com/doc/methods/getstationsdata
       def stations_data
-        require "pry"; binding.pry
         response = http.get 'https://api.netatmo.com/api/getstationsdata', access_token: access_token
         MultiJson.load(response.body)
       end
