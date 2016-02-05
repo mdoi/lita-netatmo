@@ -1,8 +1,5 @@
 # lita-netatmo
 
-[![Build Status](https://travis-ci.org/fukayatsu/lita-netatmo.png?branch=master)](https://travis-ci.org/fukayatsu/lita-netatmo)
-[![Coverage Status](https://coveralls.io/repos/fukayatsu/lita-netatmo/badge.png)](https://coveralls.io/r/fukayatsu/lita-netatmo)
-
 A Lita handler for fetching sensor data from netatmo.
 
 ## Installation
