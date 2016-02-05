@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/fukayatsu/lita-netatmo.png?branch=master)](https://travis-ci.org/fukayatsu/lita-netatmo)
 [![Coverage Status](https://coveralls.io/repos/fukayatsu/lita-netatmo/badge.png)](https://coveralls.io/r/fukayatsu/lita-netatmo)
 
-TODO: Add a description of the plugin.
+A Lita handler for fetching sensor data from netatmo.
 
 ## Installation
 
@@ -15,8 +15,20 @@ gem "lita-netatmo"
 
 ## Configuration
 
-TODO: Describe any configuration attributes the plugin exposes.
+```ruby
+Lita.configure do |config|
+  # https://dev.netatmo.com/dev/createapp
+  config.handlers.netatmo.client_id = 'xxx'
+  config.handlers.netatmo.client_secret = 'xxx'
+  config.handlers.netatmo.username = 'xxx' # Your Email
+  config.handlers.netatmo.password = 'xxx'
+end
+```
 
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+```text
+Lita: netatmo
+Lita: air
+Lita: 空気
+```
