@@ -16,10 +16,8 @@ module Lita
       def build_message(data)
         device = data['body']['devices'].first
         inside  = device['dashboard_data']
-        outside = device['modules'].first['dashboard_data']
 
-        "[room] #{inside['Temperature']} ℃, #{inside['Humidity']} %, #{inside['Pressure']} hPa, CO2: #{inside['CO2']} ppm\n" +
-        "[outside] #{outside['Temperature']} ℃, #{outside['Humidity']} %"
+        "[room] 気温: #{inside['Temperature']} ℃, 湿度: #{inside['Humidity']} %, 気圧: #{inside['Pressure']} hPa, CO2: #{inside['CO2']} ppm\n"
       end
 
       # https://dev.netatmo.com/doc/methods/getstationsdata
