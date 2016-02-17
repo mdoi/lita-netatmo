@@ -6,7 +6,7 @@ module Lita
       config :username,      type: String, required: true
       config :password,      type: String, required: true
 
-      route /^(netatmo|air|空気)/, :air, help: { "netatmo|air|空気" => "Fetch sensor data from netatmo." }
+      route /^(netatmo|air|空気)/, :air, command: true, help: { "netatmo|air|空気" => "Fetch sensor data from netatmo." }
       def air(response)
         response.reply build_message(stations_data)
       end
